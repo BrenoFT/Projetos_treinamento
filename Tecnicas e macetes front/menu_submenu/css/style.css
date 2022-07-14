@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica";
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.logo{
+    float: left;
+    color: white;
+}
+
+header{
+    padding: 10px 0;
+    background: #1976d2;
+}
+
+nav.menu-desktop{
+    float: right;
+}
+
+nav.menu-desktop > ul{
+    list-style: none;
+    position: relative;
+    top: 4px;
+}
+
+nav.menu-desktop > ul > li{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 15px;
+}
+nav.menu-desktop > ul > li:hover > ul.submenu-desktop{
+    display: block;
+}
+nav.menu-desktop a{
+    text-decoration: none;
+    color: white;
+}
+
+nav.menu-desktop a:hover{
+    text-decoration: underline;
+}
+
+ul.submenu-desktop{
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 300px;
+    max-width: 150px;
+    padding: 8px 0;
+    background:#01579b;
+}
+
+ul.submenu-desktop li{
+    padding: 10px;
+    border-bottom: 1px solid white;
+    
+}
+
+nav.menu-mobile{
+    display: none;
+    float: right;
+}
+
+nav.menu-mobile > i{
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+
+nav.menu-mobile > ul{
+    display: none;
+    background: white;
+    width: 100%;
+    list-style-type: none;
+    position: absolute;
+    border-top: 2px solid #ccc;
+    left: 0;
+    top: 43px;
+}
+
+nav.menu-mobile > ul > li{
+    width: 100%;
+    border-bottom:  1px solid black;
+    padding: 10px 8px;
+    display: inline-block;
+}
+
+ul.submenu-mobile{
+    padding: 8px 15px;
+    list-style-type: none;
+
+}
+
+nav.menu-mobile a{
+    text-decoration: none;
+    color: #01579b;
+}
+
+@media screen and (max-width:768px){
+    nav.menu-desktop{display: none;}
+    nav.menu-mobile{display: block;}
+}

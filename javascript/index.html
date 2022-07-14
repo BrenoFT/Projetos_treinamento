@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        var number_1 = prompt("Digite o primeiro número da operação: ");
+        var operador = prompt("Digite o tipo de operação que deseja fazer: ");
+
+        while(operador != '+' && operador != '-' && operador != '/' && operador != '*'){
+            var operador = prompt("Por favor, digite uma operação válida: ");
+        }
+
+        var number_2 = prompt("Digite o segundo número da operação: ");
+
+        number_1 = parseInt(number_1);
+        number_2 = parseInt(number_2);
+
+        if(operador == '+'){
+            var resultado = number_1 + number_2;
+        }
+        else if(operador == '-'){
+            var resultado = number_1 - number_2;
+        }
+        if(operador == '/'){
+            var resultado = number_1 / number_2;
+        }
+        else if(operador == '*'){
+            var resultado = number_1 * number_2;
+        }
+
+        alert("Resultado da operação: "+ resultado);
+
+    </script>
+
+</body>
+</html>

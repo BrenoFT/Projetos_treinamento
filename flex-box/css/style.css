@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+/*Classes gerais*/
+section.container{
+    width: 100%;
+}
+
+.gold{
+    background: gold;
+}
+
+.light-blue{
+    background-color: #00A3D9;
+}
+
+.flex{
+    display: flex;
+    max-width: 970px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+div.w50{
+    width: 50%;
+}
+
+div.w33{
+    width: 33.3%;
+}
+
+div.w100{
+    width: 100%;
+}
+
+/*classes especificas*/
+
+header.topo-site{
+    padding: 20px 0;
+}
+
+header.topo-site ul li{
+    padding: 0 20px;
+    font-size: 17px;
+    position: relative;
+    top: 4px;
+    display: inline-block;
+}
+
+.logo{
+    font-size: 23px;
+    font-family: Verdana;
+}
+
+
+
+header.topo-site a{
+    text-decoration: none;
+    color: white;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.text-white{
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+.slider{
+    min-height: 400px;
+}
+
+.slider p{
+    font-size: 23px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    display: inline-block;
+    border-bottom: 4px solid white;
+}
+
+.promo{
+    padding: 40px 0;
+}
+
+@media screen and (max-width: 768px){
+    div.w50{
+        width: 100%;
+    }
+    .left, .right{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    div.w33{
+        width: 100%;
+    }
+}
